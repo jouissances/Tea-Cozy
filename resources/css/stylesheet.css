@@ -1,9 +1,8 @@
 /* Global CSS */
 * {
     font-family: Helvetica;
+    font-size: 20px;
     color: seashell;
-    background-color: black;
-    text-align: center;
     top: 0;
     left: 0;
 }
@@ -19,6 +18,7 @@ header {
     position: fixed;
     z-index: 5;
     opacity: 0.9;
+    background-color: black;
 }
 
     header img {
@@ -40,6 +40,8 @@ header {
 .content {
     position: relative;
     top: 62px;
+    background-color: black;
+    text-align: center;
 }
 
     .mission {
@@ -49,6 +51,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        background-color: black;
     }
 
         .mission #img-1 {
@@ -65,7 +68,92 @@ header {
             height: 100px;
             position: absolute;
             top: 300px;
+            background-color: black;
+            text-align: center;
         }
 
 /* Section CSS 2: Featured Tea */
+.featured {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
 
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#imgs img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+#imgs #caps {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* Section CSS 3: Locations */
+.locations {
+    width: auto;
+    height: 500px;
+    background-image: url(../img/img-locations-background.jpg);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.locations #title {
+    background: none;
+    top: 40px;
+    font-size: 25px;
+}
+
+.location-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 110px;
+}
+
+.location {
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    line-height: 10%;
+    margin: 0 20px;
+    background-color: black;
+    text-align: center;
+}
+
+/* Footer CSS */
+footer {
+    height: 200px;
+    background-color: black;
+    padding: 1px 0 45px 0;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+
+#copyright {
+    text-align: left;
+    margin-left: 20px;
+}
