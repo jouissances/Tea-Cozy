@@ -377,6 +377,7 @@ footer {
 /* Section CSS 2: About Us */
 .about {
     position: relative;
+    margin: 50px 0;
     padding: 150px 0;
     width: 100%;
 }
