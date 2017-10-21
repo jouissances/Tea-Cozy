@@ -9,7 +9,7 @@
 /* Background CSS */
 .background {
     background-size: cover;
-    background-image: url('../img/background-img.jpg');
+    background-image: url('../img/background-img.jpeg');
     position: relative;
     height: 620px;
 }
@@ -25,7 +25,6 @@ logo {
     
     .geo {
         margin: auto;
-        padding: auto 10px;
         display: flex;
         align-content: center;
         position: relative;
@@ -38,7 +37,7 @@ logo {
 
     .geo p {
         margin: auto;
-        margin-top: 0px;
+        margin-top: 1px;
         opacity: 0.7;
         transition-duration: 400ms;
         
@@ -60,26 +59,28 @@ logo {
 
         .geo img {
             height: 24px;
-            margin-right: 10px;
             opacity: 0.7;
             transition-duration: 400ms;
-            border: 0.1px solid grey;
+            border: 1px solid grey;
             padding: 8px;
         }
+    
+    .logo-wrapper {
+        margin: auto;
+    }
 
     #logo {
+        padding: auto;
         margin: 0 auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
         position: relative;
-        height: 80px;
+        height: 100px;
         transition-duration: 400ms;
-        opacity: 1.0;
     }    
 
     .social {
-        margin: 30px;
-        padding: 0 15px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
         height: 24px;
     }
 
@@ -116,7 +117,7 @@ logo {
 	overflow: hidden;
     background-color: #fff;
     opacity: 0.8;
-	padding: 12px 0;
+	padding: 10px 0;
     margin: 0 1rem;
 }
 
@@ -125,6 +126,7 @@ logo {
 .menu a {
 	text-decoration: none;
 	color: #4e3c3e;
+    font-family: 'Playfair Display';
     font-size: 15px;
     font-weight: 300;
 	outline: none;
@@ -260,71 +262,167 @@ logo {
 }
 
 /* Section CSS 1: Our Mission */
-.mission {
-    width: 100%;
-    height: 95px;
-    position: relative;
-    top: 105px;
-    line-height: 0px;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    z-index: 2;
-}
-
-.mission p, .mission h2 {
-    color: #222;
-}
 
 /* Section CSS 2: Featured Tea */
 .featured {
     width: 100%;
+    height: auto;
     position: relative;
-    background-color: black;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin: 0 auto;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: #fff;
+    padding-top: 50px;
     text-align: center;
+}
 
+#feature {
+    padding-bottom: 25px;
+}
+
+#feature h2 {
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+#feature p {
+    font-size: 12px;
+    font-weight: 200;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: auto;
+    height: 18rem;
+    margin: 0 auto;
 }
 
-#imgs img {
-    width: 300px;
-    height: 200px;
-    padding: 10px;
+#caption {
+    text-align: center;
+    color: #222;
+    height: 20em;
 }
 
-#imgs #caps {
-    font-weight: bold;
+#caption p {
+    width: 90%;
+    margin: auto;
+    padding: 5px 25px;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-style: italic;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.img-berry {
+    background-image: url('../img/berrytea.png');
+    width: auto;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.img-rum {
+    width: auto;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-image: url('../img/icedrum.png');
+ }
+
+.img-chai {
+    width: auto;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-image: url('../img/variety.png');
+}
+
+.img-sencha {
+    margin: 0 10px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-image: url('../img/lemon.png')
+}
+
+.img-souchong {
+    width: auto;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-image: url('../img/hongkongrose.png');
+}
+
+/* Footer CSS */
+footer {
+    height: auto;
+    background-color: black;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+/* Section CSS 2: About Us */
+.about {
+    position: relative;
+    padding: 150px 0;
+    width: 100%;
+}
+
+.about p {
+    height: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0 auto;
+}
+
+.about .quote {
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    border-left: 1px solid grey;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Section CSS 3: Locations */
 .locations {
     width: auto;
-    height: 500px;
-    background-image: url(../img/img-locations-background.jpg);
+    height: 400px;
+    background-image: url('https://static.skillshare.com/uploads/project/c047adb66b5f13e0757efcd09b416b99/2e35f7d2');
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: space-around;
+    color: #fff;
 }
 
 .locations #title {
     background: none;
     top: 40px;
-    font-size: 25px;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .location-container {
@@ -338,33 +436,33 @@ logo {
 }
 
 .location {
+    top: 20px;
     width: 300px;
-    height: 280px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     line-height: 10%;
-    margin: 0 20px;
-    background-color: black;
+    border-radius: 50%;
+    background-color: #d94f5c;
+    opacity: 0.8;
     color: #fff;
     text-align: center;
+    transition-duration: 400ms;
 }
 
-/* Footer CSS */
-footer {
-    height: 200px;
-    background-color: black;
-    color: #fff;
-    padding: 1px 0 45px 0;
-    text-align: center;
+.location:hover {
+    opacity: 1;
 }
 
-footer h2 {
-    font-size: 25px;
+.location h3 {
+    font-size: 22px;
 }
 
-#copyright {
-    text-align: left;
-    margin-left: 20px;
+.location p {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
 }

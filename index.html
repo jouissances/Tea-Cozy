@@ -4,7 +4,9 @@
   <head>
     <title>Antealogy - A Journey from Buds to Cups</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./resources/js/slick/slick.css"/>	
     <link rel="stylesheet" type="text/css" href="./resources/js/slick/slick-theme.css"/>				
   </head>
   
@@ -22,7 +24,9 @@
               <p>Monday - Sunday: 8 am - 10 pm</p>
           </div>
        </div>
-       <img src="resources/img/antealogy-hor-cropped.png" id="logo">
+       <div class="logo-wrapper">
+              <img src="resources/img/antealogy-head.png" id="logo">
+       </div>
        <div class="social">
            <img src="resources/icons/facebook.png">
            <img src="resources/icons/instagram.png">
@@ -48,35 +52,59 @@
     </div>
     
     <div class="featured slide">
-        <div id="cap-2">
-            <h2>Tea of the Month</h2>
-            <h4>What's Steeping at The Tea Cozy?</h4>
+        <div id="feature">
+            <h2>Our Pick of the Week</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien libero, rhoncus sed felis sit amet, imperdiet viverra ligula. Quisque diam leo, rutrum vitae tempus et, tincidunt at felis. Nunc facilisis leo a nibh laoreet, tincidunt ornare ligula fermentum. Nam dapibus faucibus tortor at cursus. Ut elit sapien, fermentum et mauris sit amet, aliquet fermentum nisl. Vivamus interdum auctor sem sit amet malesuada. Sed ornare faucibus viverra. Suspendisse ullamcorper eget nisi sed ultrices. Pellentesque eget faucibus arcu. Morbi gravida tempor lorem, varius lacinia massa auctor non. Proin at ex ac libero rhoncus dictum ut eu mi. Donec a pulvinar massa, ut mattis libero. Fusce id vulputate turpis. Vestibulum et consequat elit. Aenean porta enim orci, quis sodales turpis bibendum ut. Praesent eu dui lacus.</p>
         </div>
         <div class="img-container">
-            <div id="imgs"><img src="resources/img/img-berryblitz.jpg">
-                <div id="caps">Fall Berry Blitz Tea</div>
+          <div class="img-berry">
+            <div id="caption">
+                <p>Lavender Citron Tea</p>
             </div>
-            
-            <div id="imgs"><img src="resources/img/img-spiced-rum.jpg">
-                <div id="caps">Spiced Rum Tea</div>
+          </div>
+          <div class="img-rum">
+            <div id="caption">
+                <p>Passionfruit Long Island</p>
             </div>
-            
-            <div id="imgs"><img src="resources/img/img-donut.jpg">
-                <div id="caps">Seasonal Donuts</div>
+          </div>
+          <div class="img-chai">
+            <div id="caption">
+                <p>Sumatran Chai Tea</p>
             </div>
-            
-            <div id="imgs"><img src="resources/img/img-myrtle-ave.jpg">
-                <div id="caps">Myrtle Ave Tea</div>
+          </div>
+          <div class="img-sencha">
+            <div id="caption">
+                <p>Classic Lemon Tea</p>
             </div>
-            
-            <div id="imgs"><img src="resources/img/img-bedford-bizarre.jpg">
-                <div id="caps">Bedford Bizarre Tea</div>
+          </div>
+          <div class="img-souchong">
+            <div id="caption">
+                <p>Hong Kong Rose Tea</p>
             </div>
+          </div>
         </div>
     </div>
+
+    <!-- End of content-->
     
+    <!-- Begin footer-->
+    <footer class="slide">
+        <div class="typeform-widget" data-url="https://janice141.typeform.com/to/PKXz3p" style="width: 100%; height: 700px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </footer>
+    
+    <div class="about slide">
+        <p>Integer pellentesque libero et quam auctor tristique. Nulla venenatis mattis purus eu aliquet. Suspendisse dapibus porttitor tempor. Vestibulum justo ex, ultricies mattis ornare at, porta at ante. Nam hendrerit leo nec neque porta vestibulum. Sed id massa fringilla, pretium nulla sed, egestas dui. Sed et venenatis nisl, a imperdiet sapien. Suspendisse imperdiet porttitor lacus, bibendum sodales risus sodales sed. Nunc bibendum sodales arcu a blandit. Mauris accumsan finibus venenatis. Fusce ullamcorper eros at urna fermentum lobortis.</p><br />
+        
+        <div class='quote'>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur..."</div>
+        
+        <p>Cras sagittis varius enim vitae pretium. Nulla fermentum non ex vel tincidunt. Ut imperdiet interdum interdum. Pellentesque at blandit ex. Cras in tortor rhoncus, molestie mauris non, egestas quam. Nullam tellus felis, viverra at mi in, fringilla ultricies eros. Morbi varius auctor sapien, porttitor viverra arcu tincidunt eu. Vestibulum posuere sodales nibh a fermentum. Vestibulum porttitor nec augue ac fermentum. Aliquam tincidunt tellus metus, sit amet tincidunt turpis tincidunt quis. Aliquam laoreet purus vitae nunc tristique tempor. Nullam et nisl tortor.</p><br />
+        
+        <p>Ut tempus fringilla pretium. Maecenas libero nulla, congue non dignissim nec, porttitor in libero. Nam leo nisl, consectetur ut nisi et, bibendum porta dui. Morbi auctor vitae turpis quis fringilla. Suspendisse eros massa, elementum vitae augue sit amet, eleifend convallis diam. Nulla sit amet orci vel velit ornare accumsan. Quisque finibus imperdiet nisl sed semper. Sed faucibus sollicitudin eleifend. Phasellus et ligula ac metus iaculis laoreet pulvinar id risus. Nunc porta arcu a sem gravida, et tempus orci commodo. Suspendisse vel dictum sapien. Nunc eu ante sed orci rutrum ultrices.</p>
+    </div>
+    
+        
     <div class="locations slide">
-        <h2 id="title" class="locations">Locations</h2>  
+        <p id="title" class="locations">Our Locations</p>  
       <div class="location-container">
         <div class="location">
             <h3>Downtown</h3>
@@ -86,7 +114,7 @@
         </div>
         <div class="location">
             <h3>East Bayside</h3>
-            <p>3433 Phisherman's Avenue</p> 
+            <p>34 Phisherman's Avenue</p> 
             <p>(Northwest Corner)</p>
             <p>Portland, Maine</p>
         </div>
@@ -98,19 +126,10 @@
         </div>
       </div>
     </div>
-    <!-- End of content-->
-    
-    <!-- Begin footer-->
-    <footer class="slide">
-        <h2>The Tea Cozy</h2>
-        <h5>contact@theteacozy.com</h5>
-        <h5>917-555-8904</h5>
-        
-        <div id="copyright"><h5>copyright The Tea Cozy 2017</h5></div>
-    </footer>
     <!-- End of footer-->
         <script type="text/javascript" src="./resources/js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="./resources/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="resources/js/slick/slick.min.js"></script>
         <script src="./resources/js/classie.js"></script>
 		<script src="./resources/js/clipboard.min.js"></script>
 		<script src="./resources/js/jquery.alton.min.js"></script>
