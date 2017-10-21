@@ -314,7 +314,7 @@ logo {
     margin: auto;
     padding: 5px 25px;
     font-family: 'Playfair Display';
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     background-color: #fff;
     opacity: 0.9;
@@ -400,6 +400,7 @@ footer {
     text-align: center;
     border-left: 1px solid grey;
     padding-bottom: 10px;
+    padding-left: 10px;
     margin-bottom: 20px;
 }
 
@@ -443,7 +444,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    line-height: 10%;
+    line-height: 100%;
     border-radius: 50%;
     background-color: #d94f5c;
     opacity: 0.8;
