@@ -2,33 +2,52 @@
 <html>
   <!-- Unit 4: Final project on flexbox -->
   <head>
-    <title>Tea Cozy</title>
+    <title>Antealogy - A Journey from Buds to Cups</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./resources/js/slick/slick-theme.css"/>				
   </head>
   
   <!-- Begin body -->
-  <body>
+  <body class="pageWrapper">
+
+    
     <!-- Begin header -->
-    <header>
-        <img src="./resources/img/img-tea-cozy-logo.png">
-        <nav>
-            <span><a href="#mission">Mission</a></span>
-            <span><a href="#featured">Featured Tea</a></span>
-            <span><a href="#locations">Locations</a></span>
-        </nav>
-    </header>
+    <div class="background slide">
+    <logo>
+       <div class="geo">
+           <a href="https://goo.gl/maps/vGUACbi68Wu"><img src="resources/icons/location-black.png"></a>
+          <div class="geo-p">
+              <p>Downtown, 384 West 4th St, Portland</p>
+              <p>Monday - Sunday: 8 am - 10 pm</p>
+          </div>
+       </div>
+       <img src="resources/img/antealogy-hor-cropped.png" id="logo">
+       <div class="social">
+           <img src="resources/icons/facebook.png">
+           <img src="resources/icons/instagram.png">
+           <img src="resources/icons/twitter.png">
+           <img src="resources/icons/youtube.png">
+       </div>
+    </logo>
+        <section class="section section--menu" id="viola">
+				<nav class="menu menu--viola">
+					<ul class="menu__list">
+						<li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Featured</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Events</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+					</ul>
+				</nav>
+        </section>
     <!-- End of header -->
     
     <!-- Begin content-->
-    <section class="mission">
-        <div id="img-1"><img src="resources/img/img-mission-background.jpg"></div>
-        <div id="cap-1">
-           <h2>Our Mission</h2>
-           <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
-        </div>
-    </section>
+    </div>
     
-    <section class="featured">
+    <div class="featured slide">
         <div id="cap-2">
             <h2>Tea of the Month</h2>
             <h4>What's Steeping at The Tea Cozy?</h4>
@@ -54,9 +73,9 @@
                 <div id="caps">Bedford Bizarre Tea</div>
             </div>
         </div>
-    </section>
+    </div>
     
-    <section class="locations">
+    <div class="locations slide">
         <h2 id="title" class="locations">Locations</h2>  
       <div class="location-container">
         <div class="location">
@@ -78,11 +97,11 @@
             <p>Portland, Maine</p>
         </div>
       </div>
-    </section>
+    </div>
     <!-- End of content-->
     
     <!-- Begin footer-->
-    <footer>
+    <footer class="slide">
         <h2>The Tea Cozy</h2>
         <h5>contact@theteacozy.com</h5>
         <h5>917-555-8904</h5>
@@ -90,5 +109,47 @@
         <div id="copyright"><h5>copyright The Tea Cozy 2017</h5></div>
     </footer>
     <!-- End of footer-->
+        <script type="text/javascript" src="./resources/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./resources/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="./resources/js/classie.js"></script>
+		<script src="./resources/js/clipboard.min.js"></script>
+		<script src="./resources/js/jquery.alton.min.js"></script>
+		<script src="./resources/js/index.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+				var menuItems = menu.querySelectorAll('.menu__link'),
+					setCurrent = function(ev) {
+						ev.preventDefault();
+
+						var item = ev.target.parentNode; // li
+
+						// return if already current
+						if (classie.has(item, 'menu__item--current')) {
+							return false;
+						}
+						// remove current
+						classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+						// set current
+						classie.add(item, 'menu__item--current');
+					};
+
+				[].slice.call(menuItems).forEach(function(el) {
+					el.addEventListener('click', setCurrent);
+				});
+			});
+
+			[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+				link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+				new Clipboard(link);
+				link.addEventListener('click', function() {
+					classie.add(link, 'link-copy--animate');
+					setTimeout(function() {
+						classie.remove(link, 'link-copy--animate');
+					}, 300);
+				});
+			});
+		})(window);
+		</script>
   </body>
 </html>

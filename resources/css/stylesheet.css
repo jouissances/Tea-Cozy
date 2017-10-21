@@ -1,82 +1,293 @@
 /* Global CSS */
 * {
-    font-family: Helvetica;
+    font-family: 'Nunito';
     font-size: 20px;
-    color: seashell;
     top: 0;
     left: 0;
 }
 
-/* Header CSS */ 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 69px;
-    border-bottom: 1px solid seashell;
-    position: fixed;
-    z-index: 5;
-    opacity: 0.9;
-    background-color: black;
+/* Background CSS */
+.background {
+    background-size: contain;
+    background-color: #fff;
+    background-image: url('https://media-public.canva.com/MACCM0arJ7Y/2/screen.jpg');
+    background-blend-mode:color;
+    position: relative;
+    height: 620px;
 }
 
-    header img {
-        height: 50px;
-        margin-left: 10px;
+/* Logo CSS */
+logo {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+    
+    .geo {
+        margin: auto;
+        padding: auto 10px;
+        display: flex;
+        align-content: center;
+        position: relative;
     }
 
-    header nav {
-        display: inline-block;
+    .geo-p {
+        display: flex;
+        flex-direction: column;
     }
 
-        header nav a {
-            font-size: 22px;
-            color: white;
-            padding: 0 10px;
+    .geo p {
+        margin: auto;
+        margin-top: 0px;
+        opacity: 0.7;
+        transition-duration: 400ms;
+        
+    }
+
+    .geo p:hover {
+        opacity: 1;
+    }
+
+        .geo p, .geo a {
+            font-size: 12px;
+            color: #222;
+            margin-left: 10px;
         }
+
+        .geo a {
+            text-decoration: underline;
+        }
+
+        .geo img {
+            height: 24px;
+            margin-right: 10px;
+            opacity: 0.7;
+            transition-duration: 400ms;
+            border: 0.1px solid grey;
+            padding: 8px;
+        }
+
+    #logo {
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        height: 80px;
+        transition-duration: 400ms;
+        opacity: 1.0;
+    }    
+
+    .social {
+        margin: 30px;
+        padding: 0 15px;
+        height: 24px;
+    }
+
+        .social img {
+            padding: 8px;
+            opacity: 0.7;
+            transition-duration: 400ms;
+            border: 0.1px solid grey;
+        }
+
+        .social img:hover {
+            opacity: 1.0;
+        }
+
+/* Section CSS */ 
+.content {
+	padding: 0;
+}
+
+.section {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+.section--menu {
+	position: relative;
+	overflow: hidden;
+    background-color: #fff;
+    opacity: 0.8;
+	padding: 12px 0;
+    margin: 0 1rem;
+}
+
+/* Menu CSS */ 
+
+.menu a {
+	text-decoration: none;
+	color: #4e3c3e;
+    font-size: 15px;
+    font-weight: 300;
+	outline: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+	color: #f48b95;
+}
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+	margin: 0;
+}
+
+.menu__link {
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+.menu--viola .menu__item {
+	position: relative;
+	margin: 0 1em;
+}
+
+.menu--viola .menu__link {
+	position: relative;
+	display: block;
+	text-align: center;
+	color: #929292;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.menu--viola .menu__link:hover,
+.menu--viola .menu__link:focus {
+	color: #fff;
+}
+
+.menu--viola .menu__item--current .menu__link {
+	color: #d94f5c;
+}
+
+.menu--viola .menu__item::before,
+.menu--viola .menu__item::after,
+.menu--viola .menu__link::before,
+.menu--viola .menu__link::after {
+	content: '';
+	position: absolute;
+	background: #d94f5c;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.menu--viola .menu__item::before,
+.menu--viola .menu__item::after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+.menu--viola .menu__item::before {
+	left: 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.menu--viola .menu__item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.menu--viola .menu__link::before,
+.menu--viola .menu__link::after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+.menu--viola .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.menu--viola .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.menu--viola .menu__item--current::before,
+.menu--viola .menu__item--current::after,
+.menu--viola .menu__item--current .menu__link::before,
+.menu--viola .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
 
 /* Section CSS 1: Our Mission */
-.content {
+.mission {
+    width: 100%;
+    height: 95px;
     position: relative;
-    top: 62px;
-    background-color: black;
+    top: 105px;
+    line-height: 0px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    align-items: center;
     text-align: center;
+    background-color: #fff;
+    z-index: 2;
 }
 
-    .mission {
-        width: auto;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: black;
-    }
-
-        .mission #img-1 {
-        }
-
-            .mission #img-1 img {
-                width: 1050px;
-                height: 700px;
-                position: relative;
-            }
-
-        .mission #cap-1 {
-            width: 100%;
-            height: 100px;
-            position: absolute;
-            top: 300px;
-            background-color: black;
-            text-align: center;
-        }
+.mission p, .mission h2 {
+    color: #222;
+}
 
 /* Section CSS 2: Featured Tea */
 .featured {
     width: 100%;
     position: relative;
     background-color: black;
+    color: #fff;
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
@@ -138,6 +349,7 @@ header {
     line-height: 10%;
     margin: 0 20px;
     background-color: black;
+    color: #fff;
     text-align: center;
 }
 
@@ -145,6 +357,7 @@ header {
 footer {
     height: 200px;
     background-color: black;
+    color: #fff;
     padding: 1px 0 45px 0;
     text-align: center;
 }
