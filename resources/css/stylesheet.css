@@ -8,10 +8,8 @@
 
 /* Background CSS */
 .background {
-    background-size: contain;
-    background-color: #fff;
-    background-image: url('https://media-public.canva.com/MACCM0arJ7Y/2/screen.jpg');
-    background-blend-mode:color;
+    background-size: cover;
+    background-image: url('../img/background-img.jpg');
     position: relative;
     height: 620px;
 }
