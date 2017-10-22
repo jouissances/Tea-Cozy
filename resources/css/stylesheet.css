@@ -461,3 +461,8 @@ logo {
     font-style: italic;
     letter-spacing: 1px;
 }
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
