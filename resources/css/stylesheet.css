@@ -100,7 +100,7 @@ logo {
 	padding: 0;
 }
 
-.section {
+.section-menu {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -266,7 +266,7 @@ logo {
 /* Section CSS 2: Featured Tea */
 .featured {
     width: 100%;
-    height: auto;
+    height: 620px;
     position: relative;
     margin: 0 auto;
     font-size: 24px;
@@ -306,13 +306,13 @@ logo {
 #caption {
     text-align: center;
     color: #222;
-    height: 20em;
+    height: 500px;
 }
 
 #caption p {
     width: 90%;
     margin: auto;
-    padding: 5px 25px;
+    padding: 5px 21px;
     font-family: 'Playfair Display';
     font-size: 15px;
     font-style: italic;
@@ -322,7 +322,6 @@ logo {
 
 .img-berry {
     background-image: url('../img/berrytea.png');
-    width: auto;
     margin: 0 10px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -330,7 +329,6 @@ logo {
 }
 
 .img-rum {
-    width: auto;
     margin: 0 10px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -339,7 +337,6 @@ logo {
  }
 
 .img-chai {
-    width: auto;
     margin: 0 10px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -349,7 +346,6 @@ logo {
 
 .img-sencha {
     margin: 0 10px;
-    width: auto;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -357,7 +353,6 @@ logo {
 }
 
 .img-souchong {
-    width: auto;
     margin: 0 10px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -367,9 +362,9 @@ logo {
 
 /* Footer CSS */
 footer {
-    height: auto;
-    background-color: black;
     position: relative;
+    height: 100%;
+    background-color: black;
     color: #fff;
     text-align: center;
 }
@@ -377,9 +372,10 @@ footer {
 /* Section CSS 2: About Us */
 .about {
     position: relative;
-    margin: 50px 0;
-    padding: 150px 0;
+    margin: 50px 0 0 0;
+    padding: 100px 0 0 0;
     width: 100%;
+    height: 620px;
 }
 
 .about p {
@@ -408,7 +404,7 @@ footer {
 /* Section CSS 3: Locations */
 .locations {
     width: auto;
-    height: 400px;
+    height: 620px;
     background-image: url('https://static.skillshare.com/uploads/project/c047adb66b5f13e0757efcd09b416b99/2e35f7d2');
     background-size: cover;
     position: relative;

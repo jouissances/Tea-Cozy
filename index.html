@@ -11,11 +11,11 @@
   </head>
   
   <!-- Begin body -->
-  <body class="pageWrapper">
+  <body class="pageWrapper section-wrapper">
 
     
     <!-- Begin header -->
-    <div class="background slide">
+    <div class="background section">
     <logo>
        <div class="geo">
            <a href="https://goo.gl/maps/vGUACbi68Wu"><img src="resources/icons/location-black.png"></a>
@@ -34,7 +34,7 @@
            <img src="resources/icons/youtube.png">
        </div>
     </logo>
-        <section class="section section--menu" id="viola">
+        <section class="section-menu section--menu" id="viola">
 				<nav class="menu menu--viola">
 					<ul class="menu__list">
 						<li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
@@ -51,7 +51,7 @@
     <!-- Begin content-->
     </div>
     
-    <div class="featured slide">
+    <div class="featured section">
         <div id="feature">
             <h2>Our Pick of the Week</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien libero, rhoncus sed felis sit amet, imperdiet viverra ligula. Quisque diam leo, rutrum vitae tempus et, tincidunt at felis. Nunc facilisis leo a nibh laoreet, tincidunt ornare ligula fermentum. Nam dapibus faucibus tortor at cursus. Ut elit sapien, fermentum et mauris sit amet, aliquet fermentum nisl. Vivamus interdum auctor sem sit amet malesuada. Sed ornare faucibus viverra. Suspendisse ullamcorper eget nisi sed ultrices. Pellentesque eget faucibus arcu. Morbi gravida tempor lorem, varius lacinia massa auctor non. Proin at ex ac libero rhoncus dictum ut eu mi. Donec a pulvinar massa, ut mattis libero. Fusce id vulputate turpis. Vestibulum et consequat elit. Aenean porta enim orci, quis sodales turpis bibendum ut. Praesent eu dui lacus.</p>
@@ -88,11 +88,11 @@
     <!-- End of content-->
     
     <!-- Begin footer-->
-    <footer class="slide">
-        <div class="typeform-widget" data-url="https://janice141.typeform.com/to/PKXz3p" style="width: 100%; height: 700px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    <footer class="section">
+        <div class="typeform-widget" data-url="https://janice141.typeform.com/to/PKXz3p" style="width: 100%; height: 620px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     </footer>
     
-    <div class="about slide">
+    <div class="about section">
         <p>Integer pellentesque libero et quam auctor tristique. Nulla venenatis mattis purus eu aliquet. Suspendisse dapibus porttitor tempor. Vestibulum justo ex, ultricies mattis ornare at, porta at ante. Nam hendrerit leo nec neque porta vestibulum. Sed id massa fringilla, pretium nulla sed, egestas dui. Sed et venenatis nisl, a imperdiet sapien. Suspendisse imperdiet porttitor lacus, bibendum sodales risus sodales sed. Nunc bibendum sodales arcu a blandit. Mauris accumsan finibus venenatis. Fusce ullamcorper eros at urna fermentum lobortis.</p><br />
         
         <div class='quote'>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur..."</div>
@@ -103,7 +103,7 @@
     </div>
     
         
-    <div class="locations slide">
+    <div class="locations section">
         <p id="title" class="locations">Our Locations</p>  
       <div class="location-container">
         <div class="location">
@@ -132,7 +132,9 @@
         <script src="resources/js/slick/slick.min.js"></script>
         <script src="./resources/js/classie.js"></script>
 		<script src="./resources/js/clipboard.min.js"></script>
-		<script src="./resources/js/jquery.alton.min.js"></script>
+		<script src="./resources/js/lethargy.min.js"></script>
+		<script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
+		<script src="./resources/js/smartscroll.min.js"></script>
 		<script src="./resources/js/index.js"></script>
 		<script>
 		(function() {
@@ -169,6 +171,22 @@
 				});
 			});
 		})(window);
+            
+        var options = {
+            mode: "vp", // "vp", "set"
+            autoHash: false,
+            sectionScroll: true,
+            initialScroll: true,
+            keepHistory: false,
+            sectionWrapperSelector: ".section-wrapper",
+            sectionClass: "section",
+            animationSpeed: 300,
+            headerHash: "header",
+            breakpoint: null,
+            eventEmitter: null,
+            dynamicHeight: true
+          };
+          $.smartscroll(options);
 		</script>
   </body>
 </html>
