@@ -361,10 +361,10 @@ logo {
 }
 
 /* Footer CSS */
-footer {
+.footer {
     position: relative;
     height: 100%;
-    background-color: black;
+    background-color: #fff;
     color: #fff;
     text-align: center;
 }
@@ -372,8 +372,7 @@ footer {
 /* Section CSS 2: About Us */
 .about {
     position: relative;
-    margin: 50px 0 0 0;
-    padding: 100px 0 0 0;
+    margin: 100px 0 0 0;
     width: 100%;
     height: 620px;
 }
@@ -427,14 +426,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     position: absolute;
-    top: 110px;
+    top: 150px;
 }
 
 .location {
-    top: 20px;
     width: 300px;
     height: 300px;
     display: flex;
